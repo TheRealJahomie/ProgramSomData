@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tyqB9AOSH+h6uRW2gMOwqJ9MNzDSwX1QvbScnIMyUMjrNq7fuZRKtxJDM31rK4y59O/UnFWOc8kt9PFKx1YByA==",
+  "dgSpecHash": "b3C6znadAUnYZq4WrSTNFvzEOxwU1EyFjCNn34jKcbXCkQ682m0JHOp++xZ5n8soHsNC/aN1MiDkQr5mt3k78g==",
   "success": true,
-  "projectFilePath": "/Users/edwardrostomian/Downloads/Intro/Intro.fsproj",
+  "projectFilePath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\Intro.fsproj",
   "expectedPackageFiles": [
-    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
+    "C:\\Users\\Chedd\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
   ],
   "logs": []
 }
