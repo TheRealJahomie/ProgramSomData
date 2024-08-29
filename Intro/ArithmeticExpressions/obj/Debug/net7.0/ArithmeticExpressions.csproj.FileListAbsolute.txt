@@ -1,0 +1,14 @@
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\bin\Debug\net7.0\ArithmeticExpressions.exe
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\bin\Debug\net7.0\ArithmeticExpressions.deps.json
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\bin\Debug\net7.0\ArithmeticExpressions.runtimeconfig.json
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\bin\Debug\net7.0\ArithmeticExpressions.dll
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\bin\Debug\net7.0\ArithmeticExpressions.pdb
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.AssemblyInfoInputs.cache
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.AssemblyInfo.cs
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.csproj.CoreCompileInputs.cache
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.dll
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\refint\ArithmeticExpressions.dll
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.pdb
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ArithmeticExpressions.genruntimeconfig.cache
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\intro\ArithmeticExpressions\obj\Debug\net7.0\ref\ArithmeticExpressions.dll
