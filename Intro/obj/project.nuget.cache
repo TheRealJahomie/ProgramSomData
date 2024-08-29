@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tyqB9AOSH+h6uRW2gMOwqJ9MNzDSwX1QvbScnIMyUMjrNq7fuZRKtxJDM31rK4y59O/UnFWOc8kt9PFKx1YByA==",
+  "success": true,
+  "projectFilePath": "/Users/edwardrostomian/Downloads/Intro/Intro.fsproj",
+  "expectedPackageFiles": [
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
