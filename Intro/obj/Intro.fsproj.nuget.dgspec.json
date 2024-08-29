@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\Intro.fsproj": {}
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intro.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\Intro.fsproj": {
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intro.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\Intro.fsproj",
+        "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intro.fsproj",
         "projectName": "Intro",
-        "projectPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\Intro.fsproj",
-        "packagesPath": "C:\\Users\\Chedd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\intro\\obj\\",
+        "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intro.fsproj",
+        "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+        "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Chedd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.400\\FSharp\\library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.400/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

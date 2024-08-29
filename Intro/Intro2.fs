@@ -96,4 +96,35 @@ type aexpr =
   | Sub of aexpr * aexpr
 
 let ae1 = Sub(Var "v", Add(Var "w", Var "z"))
-let ae2 = Mul(CstI 2, Sub(Var "v",(Add(Var "w", Var "z")))) 
+let ae2 = Mul(CstI 2, Sub(Var "v",(Add(Var "w", Var "z"))))
+let ae3 = Add(Var "x", Add(Var "y", Add(Var "z", Var "v")))
+
+let aeTest = Sub(Var "x", CstI 34)
+
+let rec fmt (ae: aexpr) : string =
+    match ae with
+    | CstI i -> i.ToString()
+    | Var s -> s
+    | Add(ae1, ae2) -> "(" + fmt ae1 + "+" + fmt ae2 + ")"
+    | Sub(ae1, ae2) -> "(" + fmt ae1 + "-" + fmt ae2 + ")"
+    | Mul(ae1, ae2) -> "(" + fmt ae1 + "*" + fmt ae2 + ")"
+    
+let rec simplify (ae: aexpr) : aexpr =
+    match ae with
+    | Add(CstI 0,ae1) -> ae1
+    | Add(ae1,CstI 0) -> ae1
+    | Sub(ae1,CstI 0) -> ae1
+    | Mul(CstI 1,ae1) -> ae1
+    | Mul(ae1,CstI 1) -> ae1
+    | Mul(ae1,CstI 0) -> CstI 0
+    | Mul(CstI 0,ae1) -> CstI 0
+    | Sub(ae1,ae0) -> CstI 0
+    | _ -> failwith "cannot be simplified"
+    
+let rec symbDiff ae var =
+    match ae with
+    | CstI _ -> CstI 0
+    | Var x -> if x = var then CstI 1 else CstI 0
+    | Add(ae1, ae2) -> Add(symbDiff ae1 var, symbDiff ae2 var)
+    | Sub(ae1, ae2) -> Sub(symbDiff ae1 var, symbDiff ae2 var)
+    | Mul(ae1, ae2) -> Mul(symbDiff ae1 var, symbDiff ae2 var)
