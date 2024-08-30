@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ueCXkXKvDFEHiVY/PFWv0IR36DxkCx1D0ozr12gqORgU89O6iT6vp/YwC3M/c2+Nay074lkh6/aXFFIR/bOgMQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\Intcomp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chedd\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
