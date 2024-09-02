@@ -242,10 +242,19 @@ let rec tcomp (e : expr) (cenv : string list) : texpr =
     match e with
     | CstI i -> TCstI i
     | Var x  -> TVar (getindex cenv x)
-    | Let(x, erhs, ebody) -> 
-      let cenv1 = x :: cenv 
-      TLet(tcomp erhs cenv, tcomp ebody cenv1)
+    | Let(bindings, ebody) ->
+        let rec compileBindings bindings cenv acc =
+            match bindings with
+            | [] -> tcomp ebody cenv
+            | (s,e)::rest ->
+                let t1 = tcomp e cenv
+                let cenv1 = s :: cenv
+                let acc = TLet(t1, acc)
+                compileBindings rest cenv1 acc in
+                compileBindings (List.rev bindings) cenv (tcomp ebody (List.map fst bindings @ cenv))
     | Prim(ope, e1, e2) -> TPrim(ope, tcomp e1 cenv, tcomp e2 cenv);;
+
+let CenvList = ["Hey"; "hey"; "111"]
 
 (* Evaluation of target expressions with variable indexes.  The
    run-time environment renv is a list of variable values (ints).  *)

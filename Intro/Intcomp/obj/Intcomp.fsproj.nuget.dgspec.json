@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\Intcomp.fsproj": {}
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intcomp/Intcomp.fsproj": {}
   },
   "projects": {
-    "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\Intcomp.fsproj": {
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intcomp/Intcomp.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\Intcomp.fsproj",
+        "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intcomp/Intcomp.fsproj",
         "projectName": "Intcomp",
-        "projectPath": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\Intcomp.fsproj",
-        "packagesPath": "C:\\Users\\Chedd\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\Intcomp\\obj\\",
+        "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intcomp/Intcomp.fsproj",
+        "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+        "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/Intcomp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Chedd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.400\\FSharp\\library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.400/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
