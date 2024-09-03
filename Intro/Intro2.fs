@@ -111,14 +111,17 @@ let rec fmt (ae: aexpr) : string =
     
 let rec simplify (ae: aexpr) : aexpr =
     match ae with
-    | Add(CstI 0,ae1) -> ae1
-    | Add(ae1,CstI 0) -> ae1
-    | Sub(ae1,CstI 0) -> ae1
-    | Mul(CstI 1,ae1) -> ae1
-    | Mul(ae1,CstI 1) -> ae1
+    | Add(CstI 0,ae1) -> simplify ae1
+    | Add(ae1,CstI 0) -> simplify ae1
+    | Sub(ae1,CstI 0) -> simplify ae1
+    | Mul(CstI 1,ae1) -> simplify ae1
+    | Mul(ae1,CstI 1) -> simplify ae1
     | Mul(ae1,CstI 0) -> CstI 0
     | Mul(CstI 0,ae1) -> CstI 0
-    | Sub(ae1,ae0) -> CstI 0
+    | Sub(ae1, ae2) when ae1 = ae2 -> CstI 0
+    | Add(ae1, ae2) -> Add(simplify ae1, simplify ae2)
+    | Sub(ae1, ae2) -> Sub(simplify ae1, simplify ae2)
+    | Mul(ae1, ae2) -> Mul(simplify ae1, simplify ae2)
     | _ -> failwith "cannot be simplified"
     
 let rec symbDiff ae var =
@@ -127,4 +130,4 @@ let rec symbDiff ae var =
     | Var x -> if x = var then CstI 1 else CstI 0
     | Add(ae1, ae2) -> Add(symbDiff ae1 var, symbDiff ae2 var)
     | Sub(ae1, ae2) -> Sub(symbDiff ae1 var, symbDiff ae2 var)
-    | Mul(ae1, ae2) -> Mul(symbDiff ae1 var, symbDiff ae2 var)
+    | Mul(ae1, ae2) -> Add(Mul(symbDiff ae1 var, ae2), Mul(ae1, symbDiff ae2 var)) //product rule for diff, else just Mul in case

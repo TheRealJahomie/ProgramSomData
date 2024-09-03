@@ -8,7 +8,7 @@ abstract class Expr
 {
     public abstract override string ToString();
     public abstract int Eval(Dictionary<string, int> env);
-    public abstract override Expr simplify; 
+    public abstract Expr Simplify(); 
 
 }
 
@@ -181,7 +181,7 @@ class Program
         Expr e3 = new Sub(new Var("F"), new Add(new CstI(12), new Var("L")));
         Expr e4 = new Mul(new CstI(100), new Sub(new Var("P"), new Var("R")));
 
-        Expr simpleExp = Mul.simplify(new CstI(0), new Var("Q"));
+        Expr simpleExp = new Mul(new CstI(0), new Var("Q")).Simplify();
 
 
         Console.WriteLine(e1.ToString());  

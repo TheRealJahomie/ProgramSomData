@@ -245,7 +245,7 @@ let rec tcomp (e : expr) (cenv : string list) : texpr =
     | Let(bindings, ebody) ->
         let rec compileBindings bindings cenv acc =
             match bindings with
-            | [] -> tcomp ebody cenv
+            | [] -> acc //tcomp ebody cenv
             | (s,e)::rest ->
                 let t1 = tcomp e cenv
                 let cenv1 = s :: cenv
