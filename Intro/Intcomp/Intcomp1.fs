@@ -7,6 +7,7 @@
 
 module Intcomp1
 
+(*INTRODUCED LET FROM 2.1 HERE*)
 type expr = 
   | CstI of int
   | Var of string
@@ -201,6 +202,8 @@ let rec minus (xs, ys) =
 
 (* Find all variables that occur free in expression e *)
 
+(* FREEVARS SOLUTION 2.2 *)
+
 let rec freevars e : string list =
     match e with
     | CstI i -> []
@@ -237,6 +240,8 @@ let rec getindex vs x =
     | y::yr -> if x=y then 0 else 1 + getindex yr x;;
 
 (* Compiling from expr to texpr *)
+
+(* OUR SOLUTION FOR 2.4 TCOMP ASSIGNMENT *)
 
 let rec tcomp (e : expr) (cenv : string list) : texpr =
     match e with

@@ -44,6 +44,8 @@ let e6 = Prim("==", CstI 3, CstI 2);;
 
 (* Evaluation within an environment *)
 
+(* OUR SOLUTION FOR ASSIGNMENT 1.1 *)
+
 let rec eval e (env : (string * int) list) : int =
     match e with
     | CstI i-> i
@@ -65,7 +67,8 @@ let rec eval e (env : (string * int) list) : int =
       | "==" -> if i1 = i2 then 1 else 0 
       | _ -> failwith "unknown";;
 
-(*
+(* Previous code:
+
     | Prim("*", e1, e2) -> eval e1 env * eval e2 env
     | Prim("-", e1, e2) -> eval e1 env - eval e2 env
     | Prim("max",e1, e2) -> if eval e1 env > eval e2 env then eval e1 env else eval e2 env    
@@ -88,6 +91,8 @@ let e6v = eval e6 env;;
 
 (* AEXPRESSIONS FROM HERE *)
 
+(* OUR SOLUTION FOR 2.2 AEXP *)
+
 type aexpr =
   | CstI of int
   | Var of string
@@ -101,6 +106,8 @@ let ae3 = Add(Var "x", Add(Var "y", Add(Var "z", Var "v")))
 
 let aeTest = Sub(Var "x", CstI 34)
 
+(* OUR SOLUTION FOR 2.2 FMT PART *)
+
 let rec fmt (ae: aexpr) : string =
     match ae with
     | CstI i -> i.ToString()
@@ -108,6 +115,10 @@ let rec fmt (ae: aexpr) : string =
     | Add(ae1, ae2) -> "(" + fmt ae1 + "+" + fmt ae2 + ")"
     | Sub(ae1, ae2) -> "(" + fmt ae1 + "-" + fmt ae2 + ")"
     | Mul(ae1, ae2) -> "(" + fmt ae1 + "*" + fmt ae2 + ")"
+
+  
+(* OUR SOLUTION FOR 2.2 SIMPLIFIY PART *)
+
     
 let rec simplify (ae: aexpr) : aexpr =
     match ae with
@@ -124,6 +135,9 @@ let rec simplify (ae: aexpr) : aexpr =
     | Mul(ae1, ae2) -> Mul(simplify ae1, simplify ae2)
     | _ -> failwith "cannot be simplified"
     
+(* OUR SOLUTION FOR 2.2 SYMBOL DIFFERENTIATION PART *)
+
+
 let rec symbDiff ae var =
     match ae with
     | CstI _ -> CstI 0
