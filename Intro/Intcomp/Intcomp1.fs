@@ -241,7 +241,7 @@ let rec getindex vs x =
 
 (* Compiling from expr to texpr *)
 
-(* OUR SOLUTION FOR 2.4 TCOMP ASSIGNMENT *)
+(* OUR SOLUTION FOR 2.3 TCOMP ASSIGNMENT *)
 
 let rec tcomp (e : expr) (cenv : string list) : texpr =
     match e with
