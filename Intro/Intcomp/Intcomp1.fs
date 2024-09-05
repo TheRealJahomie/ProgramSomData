@@ -352,6 +352,24 @@ let rec seval (inss : sinstr list) (stack : int list) =
     | (SSwap   :: insr, i2::i1::stkr) -> seval insr (i1::i2::stkr)
     | _ -> failwith "seval: too few operands on stack";;
 
+(* --- OUR SOLUTION FOR Exercise 2.4 --- *)
+
+let sinstrToInt sinstr : int list = //converts a sinstr into a list of integers (bytecode instruction)
+    match sinstr with
+    | SCstI i -> [0;i]
+    | SVar i -> [1;i]
+    | SAdd -> [2]
+    | SSub -> [3]
+    | SMul -> [4]
+    | SPop -> [5]
+    | SSwap -> [6]
+    
+let assemble sinstrList =
+    List.fold(fun acc (elem: sinstr) -> acc @ (sinstrToInt elem)) [] sinstrList
+
+let slist = [SCstI 1; SVar 1; SAdd]
+
+let stest = assemble slist
 
 (* A compile-time variable environment representing the state of
    the run-time stack. *)
