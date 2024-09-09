@@ -208,8 +208,8 @@ let rec freevars e : string list =
     match e with
     | CstI i -> []
     | Var x  -> [x]
-    | Let([(s,exIn)], exOut) -> 
-          union (freevars exOut, minus ([s], freevars exIn))
+    | Let(x, ebody) -> 
+          List.fold (fun list (y, erhs) -> union (freevars erhs, minus (freevars ebody, [y]))) [] x
     | Prim(ope, e1, e2) -> union (freevars e1, freevars e2);;
 
 
@@ -247,16 +247,8 @@ let rec tcomp (e : expr) (cenv : string list) : texpr =
     match e with
     | CstI i -> TCstI i
     | Var x  -> TVar (getindex cenv x)
-    | Let(bindings, ebody) ->
-        let rec compileBindings bindings cenv acc =
-            match bindings with
-            | [] -> acc //tcomp ebody cenv
-            | (s,e)::rest ->
-                let t1 = tcomp e cenv
-                let cenv1 = s :: cenv
-                let acc = TLet(t1, acc)
-                compileBindings rest cenv1 acc in
-                compileBindings (List.rev bindings) cenv (tcomp ebody (List.map fst bindings @ cenv))
+    | Let(x, ebody) -> 
+        List.fold (fun cenv (y, erhs) -> TLet(tcomp erhs cenv, tcomp ebody (y :: cenv))) cenv x
     | Prim(ope, e1, e2) -> TPrim(ope, tcomp e1 cenv, tcomp e2 cenv);;
 
 let CenvList = ["Hey"; "hey"; "111"]

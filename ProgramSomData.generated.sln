@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intro", "Intro", "{C2526191-C98F-466C-A1D3-A35B4A52B5D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intro", "Intro", "{62A76BF8-6747-4254-B551-6AC68E544CE0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArithmeticExpressions", "Intro\ArithmeticExpressions\ArithmeticExpressions.csproj", "{19A59230-5C73-45B5-BB03-278A57FA90D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArithmeticExpressions", "Intro\ArithmeticExpressions\ArithmeticExpressions.csproj", "{D7E08396-EC92-4719-93F8-047E3AE6B755}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19A59230-5C73-45B5-BB03-278A57FA90D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19A59230-5C73-45B5-BB03-278A57FA90D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19A59230-5C73-45B5-BB03-278A57FA90D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19A59230-5C73-45B5-BB03-278A57FA90D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E08396-EC92-4719-93F8-047E3AE6B755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E08396-EC92-4719-93F8-047E3AE6B755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E08396-EC92-4719-93F8-047E3AE6B755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E08396-EC92-4719-93F8-047E3AE6B755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{19A59230-5C73-45B5-BB03-278A57FA90D7} = {C2526191-C98F-466C-A1D3-A35B4A52B5D9}
+		{D7E08396-EC92-4719-93F8-047E3AE6B755} = {62A76BF8-6747-4254-B551-6AC68E544CE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1FCB30-12DD-4585-8B92-21F6AA060C5C}

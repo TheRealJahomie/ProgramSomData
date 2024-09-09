@@ -10,6 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="/Users/nh/fsharp/FsLexYacc.Runtime.dll" />
+    <Reference Include="../../fsharp/FsLexYacc.11.3.0" />
   </ItemGroup>
 </Project>

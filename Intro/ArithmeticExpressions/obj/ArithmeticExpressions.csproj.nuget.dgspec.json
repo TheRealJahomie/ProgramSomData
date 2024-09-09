@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj": {}
+    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj": {}
   },
   "projects": {
-    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj": {
+    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj",
+        "projectUniqueName": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
         "projectName": "ArithmeticExpressions",
-        "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj",
-        "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
-        "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/obj/",
+        "projectPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
+        "packagesPath": "C:\\Users\\Chedd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Chedd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
