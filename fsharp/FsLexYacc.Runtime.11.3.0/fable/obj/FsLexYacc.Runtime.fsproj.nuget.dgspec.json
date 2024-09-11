@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/FsLexYacc.Runtime.fsproj": {}
+  },
+  "projects": {
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/FsLexYacc.Runtime.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/FsLexYacc.Runtime.fsproj",
+        "projectName": "FsLexYacc.Runtime",
+        "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/FsLexYacc.Runtime.fsproj",
+        "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+        "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.400/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.400, )",
+              "generatePathProperty": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

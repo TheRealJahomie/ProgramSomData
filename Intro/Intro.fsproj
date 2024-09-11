@@ -9,4 +9,8 @@
     <Compile Include="Intro2.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="HelloLex\hello2.fsl.cs" />
+  </ItemGroup>
+
 </Project>

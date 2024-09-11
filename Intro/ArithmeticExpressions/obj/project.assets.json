@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Chedd\\.nuget\\packages\\": {}
+    "/Users/edwardrostomian/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
+      "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj",
       "projectName": "ArithmeticExpressions",
-      "projectPath": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
-      "packagesPath": "C:\\Users\\Chedd\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\obj\\",
+      "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/ArithmeticExpressions.csproj",
+      "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+      "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/ArithmeticExpressions/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Chedd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

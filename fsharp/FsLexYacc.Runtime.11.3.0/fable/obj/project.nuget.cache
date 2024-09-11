@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hx3BDAe6vqWQWvf/eia8YyBOs9wr5dLpyIDkRN1Ud6+evjYKCX+zAmwd/uLPx95NxeEcCOmufRP0smK24ztrTg==",
+  "success": true,
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/fsharp/FsLexYacc.Runtime.11.3.0/fable/FsLexYacc.Runtime.fsproj",
+  "expectedPackageFiles": [
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512",
+    "/Users/edwardrostomian/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/edwardrostomian/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
