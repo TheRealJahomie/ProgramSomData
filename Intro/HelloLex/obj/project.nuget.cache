@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kEUQNIks5hjI5GE4/P6PBRYMwmGCnkK77gJAYo7xd0nSfzqufBEnc6bE29/GIcpJfLq8rF4weg2gSPbYdKqV8g==",
+  "success": true,
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Intro/HelloLex/hello3.fsproj",
+  "expectedPackageFiles": [
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
