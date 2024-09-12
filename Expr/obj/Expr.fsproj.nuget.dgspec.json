@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj": {}
+    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\Expr.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj": {
+    "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\Expr.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
-        "projectName": "ArithmeticExpressions",
-        "projectPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\ArithmeticExpressions.csproj",
+        "projectUniqueName": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\Expr.fsproj",
+        "projectName": "Expr",
+        "projectPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\Expr.fsproj",
         "packagesPath": "C:\\Users\\Chedd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Intro\\ArithmeticExpressions\\obj\\",
+        "outputPath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chedd\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.400\\FSharp\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -27,16 +28,19 @@
             "targetAlias": "net7.0",
             "projectReferences": {}
           }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.400, )",
+              "generatePathProperty": true
+            }
+          },
           "imports": [
             "net461",
             "net462",
