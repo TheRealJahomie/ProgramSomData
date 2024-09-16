@@ -6,11 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Program.fs" />
+    <Compile Include="Expr.fs" />
+    <Compile Include="Parse.fs" />
+    <Compile Include="Absyn.fs" />
+    <Compile Include="ExprPar.fs" />
+    <Compile Include="ExprLex.fs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Users/Chedd/fsharp/FsLexYacc.11.3.0" />
+    <Reference Include="../fsharp/FsLexYacc.Runtime.dll" />
+    <PackageReference Include="FsLexYacc" Version="11.3.0" />
   </ItemGroup>
-
 </Project>

@@ -1,0 +1,4 @@
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\Expr\obj\Debug\net7.0\Expr.fsproj.AssemblyReference.cache
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\Expr\obj\Debug\net7.0\Expr.AssemblyInfoInputs.cache
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\Expr\obj\Debug\net7.0\Expr.AssemblyInfo.fs
+C:\Users\Chedd\OneDrive\Dokumenter\GitHub\ProgramSomData\Expr\obj\Debug\net7.0\Expr.fsproj.CoreCompileInputs.cache

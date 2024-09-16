@@ -6,6 +6,7 @@ module Expr
 
 open System.IO
 open Absyn
+open Parse
 
 (* From file expr/expr.sml * Simple arithmetic expressions *)
  
@@ -82,6 +83,9 @@ let rec eval (e : expr) (env : (string * int) list) : int =
       | Prim("+", e1, e2) -> eval e1 env + eval e2 env
       | Prim("*", e1, e2) -> eval e1 env * eval e2 env
       | Prim("-", e1, e2) -> eval e1 env - eval e2 env
+      | If(e1, e2, e3) -> 
+            let cond = eval e1 env 
+            if cond <> 0 then eval e2 env else eval e3 env
       | Prim _            -> raise (Failure "unknown primitive")
 
 (* Evaluate in empty environment: expression must have no free variables: *)
@@ -310,6 +314,25 @@ let rec scomp e (cenv : rtvalue list) : sinstr list =
       | Prim("*", e1, e2) -> 
             scomp e1 cenv @ scomp e2 (Intrm :: cenv) @ [SMul] 
       | Prim _ -> raise (Failure "scomp: unknown operator")
+
+let compString (input: string) : sinstr list =
+    try
+        // Parse the input string into an expression using fromString
+        let parsedExpr = Parse.fromString input
+
+        // Check if the expression is closed (no free variables)
+        if not (closed1 parsedExpr) then
+            failwith "Expression has free variables."
+
+        // Compile the parsed expression into stack machine instructions
+        let instructions = scomp parsedExpr []
+
+        // Return the list of instructions
+        instructions
+    with
+    | ex -> failwithf "Error compiling expression: %s" ex.Message
+
+
 
 let s1 = scomp e1 []
 let s2 = scomp e2 []

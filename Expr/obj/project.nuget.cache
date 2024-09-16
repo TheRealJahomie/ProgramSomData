@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wztryaYmNIek/ygmIgHg/ps3LcfAG01GItwxdDTepCs14/Hnmcrn+1oDL+I1ijYYhUWsbm5E7VFSQrqiPa9tCQ==",
+  "dgSpecHash": "nGzgB4qVHOaP2fEqsq6K9/AB36JDixygV2ykdoHxTCmzHOweqj4BCCycqe2VGT5DigP68s1MONPX3upYEgSkGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\Expr\\Expr.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Chedd\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+    "C:\\Users\\Chedd\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512",
+    "C:\\Users\\Chedd\\.nuget\\packages\\fslexyacc\\11.3.0\\fslexyacc.11.3.0.nupkg.sha512",
+    "C:\\Users\\Chedd\\.nuget\\packages\\fslexyacc.runtime\\11.3.0\\fslexyacc.runtime.11.3.0.nupkg.sha512"
   ],
   "logs": []
 }

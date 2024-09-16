@@ -39,6 +39,11 @@
               "target": "Package",
               "version": "[7.0.400, )",
               "generatePathProperty": true
+            },
+            "FsLexYacc": {
+              "target": "Package",
+              "version": "[11.3.0, )",
+              "generatePathProperty": true
             }
           },
           "imports": [

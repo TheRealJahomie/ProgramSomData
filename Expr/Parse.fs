@@ -11,6 +11,7 @@ open Absyn
 
 (* Plain parsing from a string, with poor error reporting *)
 
+(* 3.6 MAKING FROMSTRING METHOD *)
 let fromString (str : string) : expr =
     let lexbuf = LexBuffer<char>.FromString(str)
     try 
