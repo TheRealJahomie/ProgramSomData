@@ -20,6 +20,8 @@ open Absyn
 
 type 'v env = (string * 'v) list
 
+let merge (xs: int list) (xss: int list) : int list =
+
 let rec lookup env x =
     match env with 
     | []        -> failwith (x + " not found")

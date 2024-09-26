@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bqVnVI85I9YeKPuYkdDiyn8CGCqQ2gjc9UCPNvNXlAeRSv7NE6FhGC/1A8Bs9m+/1YCWeUQQ4Y4/uLhoUhFmwA==",
+  "success": true,
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/Fun2/Fun2.fsproj",
+  "expectedPackageFiles": [
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
