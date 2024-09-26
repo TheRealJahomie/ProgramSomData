@@ -33,7 +33,7 @@ C. Using the lexer, parser and first-order evaluator together:
    fslex --unicode FunLex.fsl
    fsharpi -r FsLexYacc.Runtime.dll Absyn.fs FunPar.fs FunLex.fs Parse.fs Fun.fs ParseAndRun.fs
 
-   open ParseAndRun;;
+   open ParseAndRun;; 
    run (fromString "5+7");;
    run (fromString "let y = 7 in y + 2 end");;
    run (fromString "let f x = x + 7 in f 2 end");;
