@@ -20,6 +20,10 @@ open Absyn
 
 type 'v env = (string * 'v) list
 
+(**** Exercise 5.1A ****)
+let merge (list1, list2) : int list =
+    List.sort (List.append list1 list2)
+
 let rec lookup env x =
     match env with 
     | []        -> failwith (x + " not found")

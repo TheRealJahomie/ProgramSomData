@@ -4,6 +4,16 @@
 // Compile with
 //   javac LinkedList.java
 
+class Merge {
+    static int[] merge(int[] xs, int[] ys) {
+        for(int i = 0; i < ys.length){
+            xs[xs.length+1] = ys[i];
+        }
+        xs.sort();
+    return xs;
+    }
+}
+
 class TestLinkedList {
   public static void main(String[] args) {
     LinkedList<Person> names = new LinkedList<Person>();
