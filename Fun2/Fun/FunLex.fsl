@@ -57,6 +57,10 @@ rule Token = parse
   | '('             { LPAR }
   | ')'             { RPAR }
   | eof             { EOF }
+  | "fun"           { FUN }
+  | "fn"            { FN }
+  | "->"            { ARROW }
+  | "=>"            { FATARROW }
   | _               { failwith "Lexer error: illegal symbol" }
 
 and SkipComment = parse

@@ -58,6 +58,8 @@ AtExpr:
   | LET NAME EQ Expr IN Expr END        { Let($2, $4, $6)        }
   | LET NAME NAME EQ Expr IN Expr END   { Letfun($2, $3, $5, $7) }
   | LPAR Expr RPAR                      { $2                     }
+  | FUN NAME ARROW Expr                 { Fun($2, $4)            }
+  | FN NAME FATARROW Expr               { Fn($2, $4)             }
 ;
 
 AppExpr:

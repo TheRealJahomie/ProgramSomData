@@ -8,9 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54bf554-a4d3-4d9a-ac61-0c544eccf658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Fun.fsproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fun.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fun.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Absyn.fs" beforeDir="false" afterPath="$PROJECT_DIR$/Absyn.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FunLex.fsl" beforeDir="false" afterPath="$PROJECT_DIR$/FunLex.fsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FunPar.fsy" beforeDir="false" afterPath="$PROJECT_DIR$/FunPar.fsy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HigherFun.fs" beforeDir="false" afterPath="$PROJECT_DIR$/HigherFun.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Fun.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Fun.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,26 +36,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Fun.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/edwardrostomian/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
-      "/Users/edwardrostomian/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
-      "/Users/edwardrostomian/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/edwardrostomian/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/edwardrostomian/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/edwardrostomian/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Fun" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -80,6 +89,8 @@
       <workItem from="1727345052276" duration="45000" />
       <workItem from="1727424360954" duration="203000" />
       <workItem from="1727424565694" duration="1698000" />
+      <workItem from="1727947275329" duration="4040000" />
+      <workItem from="1728296852670" duration="1991000" />
     </task>
     <servers />
   </component>
