@@ -15,6 +15,8 @@
 %token PLUS MINUS TIMES DIV MOD
 %token EQ NE GT LT GE LE
 %token LPAR RPAR 
+%token FUN ARROW 
+%token FN FATARROW
 %token EOF
 
 %left ELSE              /* lowest precedence  */
@@ -23,6 +25,7 @@
 %left PLUS MINUS
 %left TIMES DIV MOD 
 %nonassoc NOT           /* highest precedence  */
+%nonassoc ARROW FATARROW
 
 %start Main
 %type <Absyn.expr> Main Expr AtExpr Const
