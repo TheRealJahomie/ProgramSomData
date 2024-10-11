@@ -1,0 +1,4 @@
+/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroC/obj/Debug/net7.0/microcc.fsproj.AssemblyReference.cache
+/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroC/obj/Debug/net7.0/microcc.AssemblyInfoInputs.cache
+/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroC/obj/Debug/net7.0/microcc.AssemblyInfo.fs
+/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroC/obj/Debug/net7.0/microcc.fsproj.CoreCompileInputs.cache

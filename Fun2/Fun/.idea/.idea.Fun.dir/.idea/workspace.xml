@@ -9,16 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a54bf554-a4d3-4d9a-ac61-0c544eccf658" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fun.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fun.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Absyn.fs" beforeDir="false" afterPath="$PROJECT_DIR$/Absyn.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunLex.fsl" beforeDir="false" afterPath="$PROJECT_DIR$/FunLex.fsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FunPar.fsy" beforeDir="false" afterPath="$PROJECT_DIR$/FunPar.fsy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HigherFun.fs" beforeDir="false" afterPath="$PROJECT_DIR$/HigherFun.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Fun.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Fun.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Fun.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Fun.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Fun.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +81,13 @@
       <workItem from="1727424565694" duration="1698000" />
       <workItem from="1727947275329" duration="4040000" />
       <workItem from="1728296852670" duration="1991000" />
+      <workItem from="1728301085380" duration="6000" />
+      <workItem from="1728301093132" duration="459000" />
+      <workItem from="1728384925225" duration="217000" />
+      <workItem from="1728385644431" duration="167000" />
+      <workItem from="1728392522176" duration="18000" />
+      <workItem from="1728392555246" duration="306000" />
+      <workItem from="1728473416850" duration="338000" />
     </task>
     <servers />
   </component>
