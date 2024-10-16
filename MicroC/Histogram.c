@@ -20,6 +20,7 @@ void main()
     print freq[3];
 }
 
+//*** EXERCISE 7.2 ***
 void histogram(int n, int ns[], int max, int freq[])
 {
     int c;
@@ -36,5 +37,23 @@ void histogram(int n, int ns[], int max, int freq[])
         c = ns[i];
         freq[c] = freq[c] + 1;
         i = i + 1;
+    }
+}
+
+//*** EXERCISE 7.3 ***
+void histogram(int n, int ns[], int max, int freq[])
+{
+    int c;
+    int i;
+    i = 0;
+    for (i = 0; i < max; i = i + 1)
+    {
+        freq[i] = 0;
+    }
+    i = 0;
+    for (i = 0; i < n; i = i + 1)
+    {
+        c = ns[i];
+        freq[c] = freq[c] + 1;
     }
 }

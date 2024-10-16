@@ -91,6 +91,7 @@ StmtOrDecSeq:
 Stmt: 
     StmtM                               { $1 }
   | StmtU                               { $1 }
+  | FOR LPAR Expr SEMI Expr SEMI Expr RPAR Stmt { Block([$1] @ While($2, Block([$4] @ [$6]))) }
 ;
 
 StmtM:  /* No unbalanced if-else */

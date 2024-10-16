@@ -9,6 +9,7 @@ void main()
     print res;
 }
 
+//*** EXERCISE 7.2 ***
 void squares(int n, int arr[])
 {
     int i;
@@ -17,6 +18,17 @@ void squares(int n, int arr[])
     {
         arr[i] = i * i;
         i = i + 1;
+    }
+}
+
+//*** EXERCISE 7.3 ***
+void ForLoopSquares(int n, int arr[])
+{
+    int i;
+    i = 0;
+    for (i = 0; i < n; i = i + 1)
+    {
+        arr[i] = i * i;
     }
 }
 
