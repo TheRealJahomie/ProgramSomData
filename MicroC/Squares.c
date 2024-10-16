@@ -32,6 +32,7 @@ void ForLoopSquares(int n, int arr[])
     }
 }
 
+// Helper function from before
 void arrsum(int n, int arr[], int *sump)
 {
     int i;

@@ -27,7 +27,7 @@ let nl = CstI 10
 %left SEQAND
 %left EQ NE 
 %left GT LT GE LE
-%left PLUS MINUS
+%left PLUS MINUS PLUSPLUS MINUSMINUS
 %left TIMES DIV MOD 
 %nonassoc NOT AMP 
 %nonassoc LBRACK          /* highest precedence  */
@@ -123,6 +123,8 @@ ExprNotAccess:
   | PRINTLN                             { Prim1("printc", nl) }
   | Expr PLUS  Expr                     { Prim2("+",  $1, $3) }
   | Expr MINUS Expr                     { Prim2("-",  $1, $3) }
+  | PLUSPLUS Access                     { PreInc($2) }
+  | MINUSMINUS Access                   { PreDec($2) }
   | Expr TIMES Expr                     { Prim2("*",  $1, $3) }
   | Expr DIV   Expr                     { Prim2("/",  $1, $3) }
   | Expr MOD   Expr                     { Prim2("%",  $1, $3) }
