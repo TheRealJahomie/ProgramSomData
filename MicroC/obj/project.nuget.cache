@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LmlNeJMllhryX5BqvWwqFoISWhFNY7WmVBgjYR4oaLnT8nmZh0hUEiN5JpQZH7ALy/E6AlwjITf795+eyuUWdg==",
+  "dgSpecHash": "h7K1RXJ+0rWboLyH1qpGtmUcmAKMRYMzDjtrYNofqdBX+c+Kv+5Enl30soIVkauMkjl+lBj5F0I7qNeyO/vJAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chedd\\OneDrive\\Dokumenter\\GitHub\\ProgramSomData\\MicroC\\microcc.fsproj",
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroC/microcc.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Chedd\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
   ],
   "logs": []
 }

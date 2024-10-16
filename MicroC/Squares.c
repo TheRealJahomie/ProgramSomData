@@ -1,15 +1,23 @@
 void main()
 {
-    int sum[4];
-    int size;
+    int n;
+    n = 20;
     int res;
-    size = 4;
-    sum[0] = 7;
-    sum[1] = 13;
-    sum[2] = 9;
-    sum[3] = 8;
-    arrsum(size, sum, &res);
+    int arr[20];
+    squares(n, arr);
+    arrsum(n, arr, &res);
     print res;
+}
+
+void squares(int n, int arr[])
+{
+    int i;
+    i = 0;
+    while (i < n)
+    {
+        arr[i] = i * i;
+        i = i + 1;
+    }
 }
 
 void arrsum(int n, int arr[], int *sump)
