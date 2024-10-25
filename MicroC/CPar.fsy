@@ -14,6 +14,9 @@ let nl = CstI 10
 %token <int> CSTINT CSTBOOL
 %token <string> CSTSTRING NAME
 
+%token FOR
+%token PLUSPLUS
+%token MINUSMINUS
 %token CHAR ELSE IF INT NULL PRINT PRINTLN RETURN VOID WHILE
 %token PLUS MINUS TIMES DIV MOD
 %token EQ NE GT LT GE LE
@@ -91,7 +94,7 @@ StmtOrDecSeq:
 Stmt: 
     StmtM                               { $1 }
   | StmtU                               { $1 }
-  | FOR LPAR Expr SEMI Expr SEMI Expr RPAR Stmt { Block([$1] @ While($2, Block([$4] @ [$6]))) }
+  | FOR LPAR Expr SEMI Expr SEMI Expr RPAR Stmt { Block([Stmt (Expr $3); While($5, Block([Stmt $8; Stmt (Expr $7)]))]) }
 ;
 
 StmtM:  /* No unbalanced if-else */
