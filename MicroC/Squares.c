@@ -22,6 +22,7 @@ void squares(int n, int arr[])
 }
 
 //*** EXERCISE 7.3 ***
+/*
 void ForLoopSquares(int n, int arr[])
 {
     int i;
@@ -31,6 +32,7 @@ void ForLoopSquares(int n, int arr[])
         arr[i] = i * i;
     }
 }
+*/
 
 // Helper function from before
 void arrsum(int n, int arr[], int *sump)

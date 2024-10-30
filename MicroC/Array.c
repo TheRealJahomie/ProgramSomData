@@ -27,7 +27,7 @@ void arrsum(int n, int arr[], int *sump)
 }
 
 //*** EXERCISE 7.3 ***
-void ForLoopArrsum(int n, int arr[], int *sump)
+/*void ForLoopArrsum(int n, int arr[], int *sump)
 {
     int i;
     i = 0;
@@ -37,4 +37,4 @@ void ForLoopArrsum(int n, int arr[], int *sump)
         acc = acc + arr[i];
     }
     *sump = acc;
-}
+}*/

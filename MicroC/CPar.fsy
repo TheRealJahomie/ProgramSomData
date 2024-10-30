@@ -94,7 +94,6 @@ StmtOrDecSeq:
 Stmt: 
     StmtM                               { $1 }
   | StmtU                               { $1 }
-  | FOR LPAR Expr SEMI Expr SEMI Expr RPAR Stmt { Block([Stmt (Expr $3); While($5, Block([Stmt $8; Stmt (Expr $7)]))]) }
 ;
 
 StmtM:  /* No unbalanced if-else */
@@ -139,6 +138,7 @@ ExprNotAccess:
   | Expr LE    Expr                     { Prim2("<=", $1, $3) }
   | Expr SEQAND Expr                    { Andalso($1, $3)     }
   | Expr SEQOR  Expr                    { Orelse($1, $3)      }
+  | Expr QUESTION Expr COLON Expr       { Cond($1, $3, $5)    }
 ;
 
 AtExprNotAccess:

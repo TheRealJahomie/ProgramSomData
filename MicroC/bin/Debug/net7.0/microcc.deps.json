@@ -68,7 +68,7 @@
         "runtime": {
           "FsLexYacc.Runtime.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "11.3.0.0"
+            "fileVersion": "1.0.0.0"
           }
         }
       }
