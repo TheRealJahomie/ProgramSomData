@@ -57,6 +57,8 @@ type token =
   | MINUSMINUS
   | PLUSPLUS
   | FOR
+  | SWITCH
+  | CASE
   | CSTSTRING of (string)
   | NAME of (string)
   | CSTINT of (int)

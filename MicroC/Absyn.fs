@@ -26,6 +26,7 @@ and expr =
   | PreInc of access   (* C/C++/Java/C#  ++i  or  ++a[e]  *)
   | PreDec of access   (* C/C++/Java/C#  --i  or  --a[e]  *)
   | Cond of expr * expr * expr
+  | Switch of expr * (int * stmt) list
                                                                    
 and access =                                                       
   | AccVar of string                 (* Variable access        x    *) 

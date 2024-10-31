@@ -23,6 +23,7 @@ let nl = CstI 10
 %token NOT SEQOR SEQAND
 %token LPAR RPAR LBRACE RBRACE LBRACK RBRACK SEMI COMMA ASSIGN AMP
 %token EOF
+%token SWITCH CASE COLON
 
 %right ASSIGN             /* lowest precedence */
 %nonassoc PRINT
@@ -103,6 +104,7 @@ StmtM:  /* No unbalanced if-else */
   | Block                               { $1                   }
   | IF LPAR Expr RPAR StmtM ELSE StmtM  { If($3, $5, $7)       }
   | WHILE LPAR Expr RPAR StmtM          { While($3, $5)        }
+  | SWITCH LPAR Expr RPAR LBRACE CaseList RBRACE { Switch($3, $6) }
 ;
 
 StmtU:
@@ -110,6 +112,10 @@ StmtU:
   | IF LPAR Expr RPAR Stmt              { If($3, $5, Block []) }
   | WHILE LPAR Expr RPAR StmtU          { While($3, $5)        }
 ;
+
+CaseList:
+    CASE CSTINT COLON Block CaseList    { (Case($2, $4)) :: $5 }
+  | CASE CSTINT COLON Block             { [Case($2, $4)] }
 
 Expr: 
     Access                              { Access $1           }
