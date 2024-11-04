@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/nh/.nuget/packages/": {}
+    "/Users/edwardrostomian/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec07/virtual/StringConcatSpeed/StringConcatSpeed.csproj",
+      "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/virtual/StringConcatSpeed/StringConcatSpeed.csproj",
       "projectName": "StringConcatSpeed",
-      "projectPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec07/virtual/StringConcatSpeed/StringConcatSpeed.csproj",
-      "packagesPath": "/Users/nh/.nuget/packages/",
-      "outputPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec07/virtual/StringConcatSpeed/obj/",
+      "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/virtual/StringConcatSpeed/StringConcatSpeed.csproj",
+      "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+      "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/virtual/StringConcatSpeed/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nh/.nuget/NuGet/NuGet.Config"
+        "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
