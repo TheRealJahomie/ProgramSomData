@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vUQ/uOr055O2biV7RszXI7lcLR5CJCIZ1k4/UsRIdqqI5ALXndGy1XvUHF6/bq5CCo0ODwCfV2crLKH7vPiDpw==",
+  "dgSpecHash": "P0TL+blB3JU3hJakEfA7hGRWYA/rlH9/I7LJmUICGxWWT2XjpJ++dURCgewuGeyGB/iLeBr8Fe1HghzgSGu5JQ==",
   "success": true,
-  "projectFilePath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj",
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj",
   "expectedPackageFiles": [
-    "/Users/nh/.nuget/packages/fsharp.core/8.0.200/fsharp.core.8.0.200.nupkg.sha512"
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/7.0.400/fsharp.core.7.0.400.nupkg.sha512"
   ],
   "logs": []
 }

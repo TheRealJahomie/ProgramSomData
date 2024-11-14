@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj": {}
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj": {}
   },
   "projects": {
-    "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj": {
+    "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj",
+        "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj",
         "projectName": "listc",
-        "projectPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj",
-        "packagesPath": "/Users/nh/.nuget/packages/",
-        "outputPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/obj/",
+        "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj",
+        "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+        "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nh/.nuget/NuGet/NuGet.Config"
+          "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/8.0.201/FSharp/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.400/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -28,11 +28,6 @@
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -42,7 +37,7 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[8.0.200, )",
+              "version": "[7.0.400, )",
               "generatePathProperty": true
             }
           },
@@ -62,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

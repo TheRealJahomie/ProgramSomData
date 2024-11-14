@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "FSharp.Core/8.0.200": {
+      "FSharp.Core/7.0.400": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -59,15 +59,15 @@
     }
   },
   "libraries": {
-    "FSharp.Core/8.0.200": {
-      "sha512": "qnxoF3Fu0HzfOeYdrwmQOsLP1v+OtOMSIYkNVUwf6nGqWzL03Hh4r6VFCvCb54jlsgtt3WADVYkKkrgdeY5kiQ==",
+    "FSharp.Core/7.0.400": {
+      "sha512": "kJQ7TBQqd1d2VoODSgwFSAaApaBN0Fuu8mZt2XExmd3UzUxLjUsMn5Y5XhpsUWdnxOL8amp7VFg7cwhPllR4Qw==",
       "type": "package",
-      "path": "fsharp.core/8.0.200",
+      "path": "fsharp.core/7.0.400",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.8.0.200.nupkg.sha512",
+        "fsharp.core.7.0.400.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -104,29 +104,29 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "FSharp.Core >= 8.0.200"
+      "FSharp.Core >= 7.0.400"
     ]
   },
   "packageFolders": {
-    "/Users/nh/.nuget/packages/": {}
+    "/Users/edwardrostomian/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj",
+      "projectUniqueName": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj",
       "projectName": "listc",
-      "projectPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/listc.fsproj",
-      "packagesPath": "/Users/nh/.nuget/packages/",
-      "outputPath": "/Users/nh/Library/CloudStorage/Dropbox/Documents/Work/ITU/Course/BPRD-E2024/Lectures/Lec08/ListC/obj/",
+      "projectPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/listc.fsproj",
+      "packagesPath": "/Users/edwardrostomian/.nuget/packages/",
+      "outputPath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/ListC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nh/.nuget/NuGet/NuGet.Config"
+        "/Users/edwardrostomian/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/8.0.201/FSharp/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.400/FSharp/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -134,11 +134,6 @@
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -148,7 +143,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[8.0.200, )",
+            "version": "[7.0.400, )",
             "generatePathProperty": true
           }
         },
@@ -168,7 +163,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
