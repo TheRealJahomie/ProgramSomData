@@ -35,6 +35,13 @@ type bstmtordec =
 
 (* Code-generating functions that perform local optimizations *)
 
+let rec addIFNZRO lab C =
+    match C with
+    | GOTO lab2 :: Label lab3 :: rest when lab = lab3 ->
+        IFZERO lab2 :: Label lab3 :: rest
+    | _ ->
+        IFNZRO lab :: C
+
 let rec addINCSP m1 C : instr list =
     match C with
     | INCSP m2            :: C1 -> addINCSP (m1+m2) C1
@@ -102,7 +109,23 @@ let rec addCST i C =
     | (_, IFZERO lab :: C1) -> C1
     | (0, IFNZRO lab :: C1) -> C1
     | (_, IFNZRO lab :: C1) -> addGOTO lab C1
-    | _                     -> CSTI i :: C
+    | _ ->
+        match C with
+        | LT :: C1 | LE :: C1 | GT :: C1 | GE :: C1 | EQ :: C1 | NEQ :: C1 ->
+            (match C1 with
+            | CSTI i2 :: CSTI i1 :: rest ->
+                let result =
+                    match C with
+                    | LT :: _  -> if i1 < i2 then 1 else 0
+                    | LE :: _  -> if i1 <= i2 then 1 else 0
+                    | GT :: _  -> if i1 > i2 then 1 else 0
+                    | GE :: _  -> if i1 >= i2 then 1 else 0
+                    | EQ :: _  -> if i1 = i2 then 1 else 0
+                    | NEQ :: _ -> if i1 <> i2 then 1 else 0
+                    | _ -> failwith "Unsupported comparison"
+                addCST result rest
+            | _ -> CSTI i :: C)
+        | _ -> CSTI i :: C
             
 (* ------------------------------------------------------------------- *)
 
@@ -188,12 +211,11 @@ let rec cStmt stmt (varEnv : varEnv) (funEnv : funEnv) (C : instr list) : instr 
     | If(e, stmt1, stmt2) -> 
       let (jumpend, C1) = makeJump C
       let (labelse, C2) = addLabel (cStmt stmt2 varEnv funEnv C1)
-      cExpr e varEnv funEnv (IFZERO labelse 
-       :: cStmt stmt1 varEnv funEnv (addJump jumpend C2))
+      cExpr e varEnv funEnv (addIFZERO labelse (cStmt stmt1 varEnv funEnv (addJump jumpend C2)))
     | While(e, body) ->
       let labbegin = newLabel()
       let (jumptest, C1) = 
-           makeJump (cExpr e varEnv funEnv (IFNZRO labbegin :: C))
+           makeJump (cExpr e varEnv funEnv (addIFNZRO labbegin :: C))
       addJump jumptest (Label labbegin :: cStmt body varEnv funEnv C1)
     | Expr e -> 
       cExpr e varEnv funEnv (addINCSP -1 C) (* Remove result of expression from stack, as this is a statement *)
@@ -300,6 +322,10 @@ and cExpr (e : expr) (varEnv : varEnv) (funEnv : funEnv) (C : instr list) : inst
            (IFNZRO labtrue 
              :: cExpr e2 varEnv funEnv (addJump jumpend C2))
     | Call(f, es) -> callfun f es varEnv funEnv C
+    | Cond(e1, e2, e3) -> 
+        let (labelL1, C1) = addLabel (cExpr e3 varEnv funEnv C)
+        let (labelL2, C2) = addLabel (addGOTO labelL1 C1)
+        cExpr e1 varEnv funEnv (addIFZERO labelL1 (cExpr e2 varEnv funEnv C2))
 
 (* Generate code to access variable, dereference pointer or index array: *)
 
