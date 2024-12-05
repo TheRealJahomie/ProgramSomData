@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XwY8Y94/Y9I=",
+  "success": true,
+  "projectFilePath": "/Users/edwardrostomian/Documents/GitHub/ProgramSomData/MicroSMLpublic/microsmlc.fsproj",
+  "expectedPackageFiles": [
+    "/Users/edwardrostomian/.nuget/packages/fsharp.core/8.0.403/fsharp.core.8.0.403.nupkg.sha512"
+  ],
+  "logs": []
+}
